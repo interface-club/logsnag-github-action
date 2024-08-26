@@ -27,7 +27,7 @@ inputs:
   description:
     description: A longer description of your log.
     required: false
-    default: ''
+    default: ""
 
   icon:
     description: An icon emoji
@@ -37,6 +37,11 @@ inputs:
   notify:
     description: Should LogSnag send you a notification? True by default
     default: true
+
+  parser:
+    description: The parser to use for the description.
+    required: false
+    default: "text"
 
 runs:
   using: docker
